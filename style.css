@@ -20,7 +20,7 @@ header{
     height:40px;
     background: white;
     border-style:none;
-    margin:-4px;
+    margin:-5px;
 }
 .btn{
     width:40px;
@@ -63,7 +63,30 @@ header{
     color:black;
     font-size:1.5rem;
     display:flex;
+    transition: all 1s ease;
 }
 .todo li{
     flex:1;
+    text-align:left;    
+}
+
+.todo button{
+    background:rgb(83, 88, 94);
+    color:white;
+    padding:7px;
+    border:none;
+    cursor:pointer;
+}
+form{
+    margin:20px;
+}
+.todo-item{
+    padding:0rem 0.5rem;
+}
+button i{
+    pointer-events:none;
+}
+.completed{
+    text-decoration:line-through;
+    opacity:0.5;
 }
