@@ -21,6 +21,7 @@ header{
     background: white;
     border-style:none;
     margin:-5px;
+    
 }
 .btn{
     width:40px;
@@ -32,10 +33,14 @@ header{
     margin:0px;
     font-size:15px;
     cursor:pointer;
+    outline:none;
+    font-weight:bold;
+    color:#53585E;
 }
 .btn:hover{
     transition:0.5s;
     background:rgb(83, 88, 94);
+    color:white;
 }
 .btn i{
     background:rgb(83, 88, 94);
@@ -52,11 +57,27 @@ header{
     align-items: center;
    
 }
+.todo-complete-cotainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:22%;
+    height:300px;
+    margin:30px auto;
+    padding-top:0;
+}
+.todo-list-complete{
+    list-style:none;
+    min-width:310px;
+    padding-top:0;
+}
+
 .todo-list{
     min-width:310px;
     list-style:none;
     display:block;
 }
+
 .todo{
     margin:0.5rem;
     background:white;
@@ -86,7 +107,4 @@ form{
 button i{
     pointer-events:none;
 }
-.completed{
-    text-decoration:line-through;
-    opacity:0.5;
-}
+
